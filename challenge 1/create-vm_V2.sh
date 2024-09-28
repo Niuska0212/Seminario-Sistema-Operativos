@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Función para solicitar datos al usuario
 function pedir_dato() {
     local mensaje=$1
     local valor
@@ -24,7 +23,7 @@ SATA_CONTROLLER="SATA_Controller"
 IDE_CONTROLLER="IDE_Controller"
 HDD_FILE="$VM_NAME.vdi"  # Nombre del archivo de disco duro virtual
 
-# Crear la Máquina Virtual
+# Crear la MV
 VBoxManage createvm --name "$VM_NAME" --ostype "$OS_TYPE" --register
 echo "Máquina virtual '$VM_NAME' creada."
 
